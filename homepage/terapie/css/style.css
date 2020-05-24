@@ -1,0 +1,288 @@
+/* .jumbotron {
+  background-image: linear-gradient(30deg, #a7cacb 25%, #5f9ea0 25%, #5f9ea0 50%, #a7cacb 50%, #a7cacb 75%, #5f9ea0 75%, #5f9ea0 100%);
+  background-size: 80.00px 46.19px;
+} */
+* {
+  font-family: 'Cabin', serif;
+}
+
+footer, section {
+  display: block;
+}
+
+.btnDeleteTerapia {
+  color: #C15A51;
+}
+
+#btnAddTerapiaGiornaliera, #btnAddTerapiaIntervallare {
+  background-color: #ebeddc;
+  color: #7a6a54;
+  border-color: #ccb28d;
+}
+
+.blockquote-footer {
+  display: block;
+  font-size: 50%;
+  color: #6c757d;
+}
+.blockquote-footer::before {
+  content: "— ";
+}
+
+.card-footer {
+  padding: 0.75rem 1.25rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 0.125rem solid rgba(0, 0, 0, 0.125);
+}
+.card-footer:last-child {
+  border-radius: 0 0 0.375rem 0.375rem;
+}
+
+.card-group > .card:not(:last-child) .card-img-bottom,
+.card-group > .card:not(:last-child) .card-footer {
+  border-bottom-right-radius: 0;
+}
+
+.card-group > .card:not(:first-child) .card-img-bottom,
+.card-group > .card:not(:first-child) .card-footer {
+  border-bottom-left-radius: 0;
+}
+
+.modal-dialog-scrollable .modal-header,
+.modal-dialog-scrollable .modal-footer {
+  flex-shrink: 0;
+}
+
+.modal-footer {
+  line-height: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 4rem 1rem-0.25rem;
+  border-top: 0 solid #dee2e6;
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+.modal-footer > * {
+  margin: 0.25rem;
+}
+
+.footer {
+  height: 230px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: CadetBlue;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+.copyright {
+  background-color: #457274;
+  bottom: 0;
+}
+
+.btn-social {
+  border-radius: 100%;
+  display: inline-flex;
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown {
+  text-align: center;
+}
+
+#terapieGiornaliere {
+   margin-bottom: 1.5cm;
+   margin-top: 0.5cm;
+   text-align:center;
+}
+
+#terapieIntervallari {
+   margin-bottom: 0.5cm;
+   text-align:center;
+}
+
+.jumbotron {
+  background-image: url('../images/amicoPattern.png');
+}
+
+#terapieGiornaliere  {
+  background-color: LightGoldenRodYellow;
+}
+
+#terapieIntervallari {
+  background-color: MistyRose;
+}
+
+body {
+  background-color: LightCyan;
+}
+
+.navbar {
+  background-color: CadetBlue;
+}
+
+div.well {
+  border-radius: 20px;
+  background-color: LightSteelBlue;
+}
+
+h2 {
+  padding: 10px;
+  margin: 10px;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+p.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+input {
+  width: 130px;
+}
+
+p#updatePage {
+  visibility: hidden;
+}
+
+/* ******************************************* */
+#terapieBody {
+  display: none;
+}
+
+/* ****************** Dropdown Style ***************** */
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+  border-radius: 5px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/* ****************** Switch Style ***************** */
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*MediumPurple*/
